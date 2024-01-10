@@ -1,0 +1,14 @@
+[{
+    "name": "Spider-Man: No Way Home",
+    "imdb": 9.3,
+    "date": 2021,
+    "sposter": "./movies/NoWayHome-sposter.jpeg",
+    "bposter": "./movies/NoWayHome-bposter.jpeg",
+    "genre": "Action",
+    "type": "movies",
+    "url": "NoWayHome.html",
+    "trailer": "./videos/SPIDER-MAN NO WAY HOME - Official Trailer (HD).mp4",
+    "low": "./videos/SPIDER-MAN NO WAY HOME - Official Trailer (HD).mp4",
+    "med": "./videos/SPIDER-MAN NO WAY HOME - Official Trailer (HD).mp4",
+    "high": "./videos/SPIDER-MAN NO WAY HOME - Official Trailer (HD).mp4"
+}]
