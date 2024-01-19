@@ -1,7 +1,4 @@
-**Movie Star by Taha Efe**
-
-
-**General Overview**
+#h1 **Movie Star by Taha Efe**
 
 The "Movie Star" web page is an interactive and visually appealing platform designed to showcase a diverse range of movies and series. It features a modern and user-friendly interface with a dynamic layout including a video trailer header, a responsive navigation bar, and various content sections with a functional search bar. The web page integrates multimedia elements like video and images seamlessly with textual content, providing an engaging user experience. The design focuses on user interactivity, with features like search functionality, content filtering, and dynamic content loading, ensuring a smooth and responsive experience for viewers.
 
