@@ -12,6 +12,7 @@ const overview = document.getElementById('overview');
 const director = document.getElementById('director');
 const gen = document.getElementById('gen');
 const rate = document.getElementById('rate');
+const date = document.getElementById('date');
 const play = document.getElementById('play');
 const download = document.getElementById('download_main');
 let genreList = {};
@@ -241,11 +242,10 @@ kids.addEventListener('click', async () => {
     try {
         const response = await fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=16', options);
         const data = await response.json();
-        console.log(data.results[0]);
 
         updateHeader(data.results[0]);
         updateDetailsKids(data.results[0]);
-        video.src = './videos/Trolls.mp4';
+        video.src = './videos/Heron.mp4';
         
         const cardsHTML = data.results.map(element => createKidsCard(element)).join('');
         cards.innerHTML = cardsHTML;
@@ -296,7 +296,7 @@ function createKidsCard(element) {
 
 function updateDetailsKids(result) {
     overview.innerHTML = `<p id="overview">${result.overview}</p>`;
-    director.innerHTML = `<h6 id="director">Robert Marianetti</h6>`;
+    director.innerHTML = `<h6 id="director">Hayao Miyazaki</h6>`;
     gen.innerHTML = `<h5 id="gen">${genreList[result.genre_ids[0]]}</h5>`;
     date.innerHTML = `<h4 id="date">${result.release_date.slice(0, 4)}</h4>`;
     rate.innerHTML = `<h3 id="rate"><span>IMDB</span><i class="bi bi-star-fill"></i> ${result.vote_average.toFixed(1)}</h3>`;
