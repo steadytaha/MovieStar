@@ -172,7 +172,7 @@ series.addEventListener('click', async () => {
 
         updateHeader(data.results[0]);
         updateDetailsSeries(data.results[0]);
-        video.src = './videos/Echo.mp4';
+        video.src = './videos/MastersOftheAir.mp4';
         
         const cardsHTML = data.results.map(element => createSeriesCard(element)).join('');
         cards.innerHTML = cardsHTML;
@@ -208,7 +208,7 @@ function updateHeader(result) {
 
 function updateDetailsSeries(result) {
     overview.innerHTML = `<p id="overview">${result.overview}</p>`;
-    director.innerHTML = `<h6 id="director">Sydney Freeland</h6>`;
+    director.innerHTML = `<h6 id="director">John Shiban</h6>`;
     gen.innerHTML = `<h5 id="gen">${genreList[result.genre_ids[0]]}</h5>`;
     date.innerHTML = `<h4 id="date">${result.first_air_date.slice(0, 4)}</h4>`;
     rate.innerHTML = `<h3 id="rate"><span>IMDB</span><i class="bi bi-star-fill"></i> ${result.vote_average.toFixed(1)}</h3>`;
@@ -245,7 +245,7 @@ kids.addEventListener('click', async () => {
 
         updateHeader(data.results[0]);
         updateDetailsKids(data.results[0]);
-        video.src = './videos/Heron.mp4';
+        video.src = './videos/Migration.mp4';
         
         const cardsHTML = data.results.map(element => createKidsCard(element)).join('');
         cards.innerHTML = cardsHTML;
@@ -296,7 +296,7 @@ function createKidsCard(element) {
 
 function updateDetailsKids(result) {
     overview.innerHTML = `<p id="overview">${result.overview}</p>`;
-    director.innerHTML = `<h6 id="director">Hayao Miyazaki</h6>`;
+    director.innerHTML = `<h6 id="director">Benjamin Renner</h6>`;
     gen.innerHTML = `<h5 id="gen">${genreList[result.genre_ids[0]]}</h5>`;
     date.innerHTML = `<h4 id="date">${result.release_date.slice(0, 4)}</h4>`;
     rate.innerHTML = `<h3 id="rate"><span>IMDB</span><i class="bi bi-star-fill"></i> ${result.vote_average.toFixed(1)}</h3>`;
